@@ -69,7 +69,7 @@ class TestVarasto(unittest.TestCase):
 
     def test_ylimenava_ottaminen_vie_kaiken(self):
         self.varasto.lisaa_varastoon(10)
-        self.assertAlmostEqual(self.varasto.saldo, 10)
+        self.assertAlmostEqual(self.varasto.saldo, 1)
         self.assertAlmostEqual(self.varasto.paljonko_mahtuu(), 0)
         self.varasto.ota_varastosta(1000)
         self.assertAlmostEqual(self.varasto.saldo, 0)
